@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    /* font-size: 5; */
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
 
@@ -77,4 +78,22 @@
 
 .print-force-new-page {
   page-break-before: always;
+}
+
+
+.column-logo {
+  float: left;
+  width: 10%;
+}
+
+.column-card {
+  float: left;
+  width: 90%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
