@@ -100,28 +100,6 @@ export default function Page() {
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
-          {RESUME_DATA.education.map((education) => {
-            return (
-              <Card key={education.school}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
-                      {education.school}
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {education.start} - {education.end}
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="mt-2 print:text-[12px]">
-                  {education.degree}
-                </CardContent>
-              </Card>
-            );
-          })}
-        </Section>
-        <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (<div className="row">
@@ -135,7 +113,7 @@ export default function Page() {
               </div>
               <div className="column-card">
 
-              
+
                 <Card key={work.company}>
                   <CardHeader>
                     <div className="flex items-center justify-between gap-x-2 text-base">
@@ -168,7 +146,7 @@ export default function Page() {
                   <CardContent className="mt-2 text-xs print:text-[10px]">
                     {work.description}
                   </CardContent>
-                  <div style={{alignContent: 'center'}}>
+                  <div style={{ alignContent: 'center' }}>
                     {work.technologies?.map((badge) => (
                       <Badge
                         variant="outline"
@@ -180,11 +158,34 @@ export default function Page() {
                     ))}
                   </div>
                 </Card>
-                </div>
-              </div>);
+              </div>
+            </div>);
           })}
         </Section>
-        
+
+        <Section>
+          <h2 className="text-xl font-bold">Education</h2>
+          {RESUME_DATA.education.map((education) => {
+            return (
+              <Card key={education.school}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                      {education.school}
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {education.start} - {education.end}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="mt-2 print:text-[12px]">
+                  {education.degree}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
         {/* <Section>
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
@@ -199,7 +200,7 @@ export default function Page() {
         </Section> */}
 
         <Section className="scroll-mb-16">
-          <h2 className="text-l font-bold">Projects and further Education</h2>
+          <h2 className="text-l font-bold">Talks and other projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (

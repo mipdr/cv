@@ -9,18 +9,18 @@ export const RESUME_DATA = {
   about:
     "Software Engineer",
   summary:
-    "Ever learning computer scientist with a musician background and a passion for problem solving and quality software design. Confident and upfront in my communication with both colleagues and clients. I enjoy team work, knowledge sharing and story telling on technical business topics.",
+    "Ever learning software engineer with a musician background and a passion for problem solving and quality software design. I enjoy developing critical systems at scale and delivering high quality products for the end-user. Fast-pased, highly-collaborative environments is where I thrive.",
   avatarUrl: "https://avatars.githubusercontent.com/u/46425518?v=4",
   // personalWebsiteUrl: "https://jarocki.me",
   contact: {
     email: "miguelpedregosaperez@gmail.com",
     tel: "+34 653992242",
     social: [
-      {
-        name: "GitHub",
-        url: "https://github.com/mipdr",
-        icon: GitHubIcon,
-      },
+      // {
+      //   name: "GitHub",
+      //   url: "https://github.com/mipdr",
+      //   icon: GitHubIcon,
+      // },
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/miguel-pedregosa/",
@@ -29,6 +29,13 @@ export const RESUME_DATA = {
     ],
   },
   education: [
+    {
+      school: "Universitat Rovira i Virgili",
+      degree: "Master's Degree in Computational Engineering and Mathematics",
+      start: "2024",
+      end: "*",
+      logo: UGRLogo,
+    },
     {
       school: "University of Granada",
       degree: "Bachelor's Degree in Computer Science and Engineering",
@@ -41,30 +48,29 @@ export const RESUME_DATA = {
     {
       company: "Auth0 (acquired by Okta)",
       link: "https://auth0.com/",
-      badges: ["Remote"],
-      title: "Software Engineer II",
+      badges: [],
+      title: "Software Engineer",
       logo: Auth0Logo,
       start: "2023",
       end: null,
       description:
-        "Developing and maintaining core CIAM features at high scale on a global infrastructure. With a high standard for security, performance and DX, we regularly work with standard identity protocols like OIDC or SAML to make authentication simpler.",
+        "Developing and maintaining core CIAM features at high scale on a global multi-tenant infrastructure. With a high standard for security, performance and DX, we regularly work with standard identity protocols like OIDC or SAML to make authentication simpler.",
       technologies: [
-        "OIDC",
-        "SAML",
-        "SQL",
-        "NoSQL",
         "Typescript",
-        "NodeJS",
+        "OIDC",
+        "PGSQL",
+        "MongoDB",
+        "Redis",
+        "DynamoDB",
         "AWS",
-        "CI/CD",
-        "Agile",
-        "OAuth",
+        "Terraform",
+        "K8s",
       ]
     },
     {
       company: "AdSecure",
       link: "https://www.adsecure.com/",
-      badges: ["Remote"],
+      badges: [],
       title: "Senior Software Engineer",
       logo: AdSecureLogo,
       start: "2022",
@@ -75,10 +81,11 @@ export const RESUME_DATA = {
         "Typescript",
         "NodeJS",
         "AWS",
-        "Browser Automation",
+        "DevToolsProtocol",
         "SQL",
         "NoSQL",
         "CI/CD",
+        "Graph Databases"
       ]
     },
     {
@@ -130,6 +137,19 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      title: "Kick the bad actors out",
+      techStack: [
+        "OIDC",
+        "SAML SLO",
+        "BCLO",
+        "Security"
+      ],
+      description: "Talk for DevDay24 on how to accomplish Global Logout to mitigate session hijacking risks.",
+      link: {
+        href: "https://a0.to/devday24/access-revocation",
+      },
+    },
+    {
       title: "GenoMus",
       techStack: [
         "C++",
@@ -149,180 +169,22 @@ export const RESUME_DATA = {
       },
       description:
         "Developed a visualization tool for an OWL2 Ontology representing uncertain historical texts.",
-        techStack: [
+      techStack: [
         "NodeJS",
         "SQL",
         "Python",
         "ETL",
       ]
     },
-    {
-      title: "Data Science course",
-      link: {
-        href: "https://www.linkedin.com/school/mainforformacion/"
-      },
-      techStack: [
-        "Python", "ML"
-      ],
-      description: "Received a 55h course on Data science @ Mainfor"
-    },
     // {
-    //   title: "Parabol",
+    //   title: "Data Science course",
+    //   link: {
+    //     href: "https://www.linkedin.com/school/mainforformacion/"
+    //   },
     //   techStack: [
-    //     "Full Stack Developer",
-    //     "TypeScript",
-    //     "React",
-    //     "Node.js",
-    //     "GraphQL",
+    //     "Python", "ML"
     //   ],
-    //   description:
-    //     "The Agile meeting co-pilot that delivers better meetings with less effort",
-    //   logo: ParabolLogo,
-    //   link: {
-    //     label: "github.com",
-    //     href: "https://parabol.co/",
-    //   },
-    // },
-    // {
-    //   title: "Evercast",
-    //   techStack: [
-    //     "Lead Frontend Developer",
-    //     "TypeScript",
-    //     "React",
-    //     "Node.js",
-    //     "GraphQL",
-    //   ],
-    //   description:
-    //     "Creative collaboration platform that combines video conferencing and HD media streaming",
-    //   logo: EvercastLogo,
-    //   link: {
-    //     label: "evercast.us",
-    //     href: "https://www.evercast.us/",
-    //   },
-    // },
-    // {
-    //   title: "Consultly",
-    //   techStack: [
-    //     "Side Project",
-    //     "TypeScript",
-    //     "Next.js",
-    //     "Vite",
-    //     "GraphQL",
-    //     "WebRTC",
-    //   ],
-    //   description: "A platform to build and grow your online business",
-    //   logo: ConsultlyLogo,
-    //   link: {
-    //     label: "consultly.com",
-    //     href: "https://consultly.com/",
-    //   },
-    // },
-    // {
-    //   title: "Monito",
-    //   techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-    //   description:
-    //     "Browser extension that records everything happening in a web application",
-    //   logo: MonitoLogo,
-    //   link: {
-    //     label: "monito.dev",
-    //     href: "https://monito.dev/",
-    //   },
-    // },
-    // {
-    //   title: "Jarocki.me",
-    //   techStack: ["Side Project", "Next.js", "MDX"],
-    //   description:
-    //     "Personal website and blog. Built with Next.js and Notion API",
-    //   logo: JarockiMeLogo,
-    //   link: {
-    //     label: "github.com",
-    //     href: "https://jarocki.me/",
-    //   },
-    // },
-    // {
-    //   title: "Minimal",
-    //   techStack: ["Side Project", "Next.js", "Puppeteer"],
-    //   description:
-    //     "Minimalist calendars, habit trackers, and planners generator",
-    //   logo: Minimal,
-    //   link: {
-    //     label: "useminimal.com",
-    //     href: "https://useminimal.com/",
-    //   },
-    // },
-    // {
-    //   title: "Barepapers",
-    //   techStack: ["Side Project", "Next.js", "Puppeteer"],
-    //   description:
-    //     "Generates beautiful wallpapers using random shapes and gradients",
-    //   logo: BarepapersLogo,
-    //   link: {
-    //     label: "barepapers.com",
-    //     href: "https://barepapers.com/",
-    //   },
-    // },
-    // {
-    //   title: "Year progress",
-    //   techStack: ["Side Project", "TypeScript", "Next.js"],
-    //   description: "Tracks current year progress and displays a countdown",
-    //   logo: YearProgressLogo,
-    //   link: {
-    //     label: "getyearprogress.com",
-    //     href: "https://getyearprogress.com/",
-    //   },
-    // },
-    // {
-    //   title: "Mobile Vikings",
-    //   techStack: ["Lead Android Developer", "Android", "Kotlin"],
-    //   description:
-    //     "Android application for leading virtual mobile operator in Poland",
-    //   logo: MobileVikingsLogo,
-    //   link: {
-    //     label: "mobilevikings.pl",
-    //     href: "https://mobilevikings.pl/",
-    //   },
-    // },
-    // {
-    //   title: "Howdy",
-    //   techStack: ["Lead Android Developer", "Android", "Kotlin"],
-    //   description: "Howdy is a place for joining communities you care about",
-    //   logo: Howdy,
-    //   link: {
-    //     label: "play.google.com",
-    //     href: "https://howdy.co/",
-    //   },
-    // },
-    // {
-    //   title: "Tastycloud",
-    //   techStack: ["Lead Android Developer", "Android", "Kotlin"],
-    //   description:
-    //     "Android application for managing and displaying restaurant menus in kiosk mode",
-    //   logo: TastyCloudLogo,
-    //   link: {
-    //     label: "tastycloud.fr",
-    //     href: "https://www.tastycloud.fr/",
-    //   },
-    // },
-    // {
-    //   title: "Ambit",
-    //   techStack: ["Lead Android Developer", "Android", "Kotlin"],
-    //   description:
-    //     "Android application that helps with sharing your contact details",
-    //   logo: AmbitLogo,
-    // },
-    // {
-    //   title: "Bim",
-    //   techStack: ["Lead Android Developer", "Android", "Kotlin"],
-    //   description:
-    //     "Android application that helps with booking a table in a restaurants",
-    //   logo: BimLogo,
-    // },
-    // {
-    //   title: "Canal Digital GO",
-    //   techStack: ["Lead Android Developer", "Android", "Kotlin"],
-    //   description:
-    //     "Video streaming mobile application for Canal Digital subscribers",
-    //   logo: CDGOLogo,
+    //   description: "Received a 55h course on Data science @ Mainfor"
     // },
   ],
 } as const;
