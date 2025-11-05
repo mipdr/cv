@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   location: "Spain",
   locationLink: "https://maps.app.goo.gl/UGXuJNGsii72x2nu9",
   about:
-    "Software Engineer",
+    "Senior Software Engineer",
   summary:
     "Ever learning software engineer with a musician background and a passion for problem solving and quality software design. I enjoy developing critical systems at scale and delivering high quality products for the end-user. Fast-pased, highly-collaborative environments is where I thrive.",
   avatarUrl: "https://avatars.githubusercontent.com/u/46425518?v=4",
@@ -49,15 +49,14 @@ export const RESUME_DATA = {
       company: "Auth0 (acquired by Okta)",
       link: "https://auth0.com/",
       badges: [],
-      title: "Software Engineer",
+      title: "Senior Software Engineer",
       logo: Auth0Logo,
       start: "2023",
       end: null,
       description:
         "Developing and maintaining core CIAM features at high scale on a global multi-tenant infrastructure. With a high standard for security, performance and DX, we regularly work with standard identity protocols like OIDC or SAML to make authentication simpler.",
       technologies: [
-        "Typescript",
-        "OIDC",
+        "TS",
         "PGSQL",
         "MongoDB",
         "Redis",
@@ -78,7 +77,7 @@ export const RESUME_DATA = {
       description:
         `We develop a platform to identify and mitigate bad practices on online advertisement. We utilize browser automation to orchestrate user navigation discovery and several risk evaluation engines to assess threats.`,
       technologies: [
-        "Typescript",
+        "TS",
         "NodeJS",
         "AWS",
         "DevToolsProtocol",

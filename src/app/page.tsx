@@ -100,7 +100,7 @@ export default function Page() {
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold">Relevant Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (<div className="row">
               <div className="column-logo">
@@ -201,7 +201,7 @@ export default function Page() {
 
         <Section className="scroll-mb-16">
           <h2 className="text-l font-bold">Talks and other projects</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3 print:!grid-cols-3 print:gap-2">
             {RESUME_DATA.projects.map((project) => {
               return (
                 <ProjectCard
@@ -219,10 +219,10 @@ export default function Page() {
 
       <CommandMenu
         links={[
-          {
-            url: RESUME_DATA.personalWebsiteUrl,
-            title: "Personal Website",
-          },
+          // {
+          //   url: RESUME_DATA.personalWebsiteUrl,
+          //   title: "Personal Website",
+          // },
           ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
             url: socialMediaLink.url,
             title: socialMediaLink.name,
