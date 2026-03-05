@@ -8,6 +8,7 @@ import { GlobeIcon, MailIcon, PhoneIcon, Table } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -144,7 +145,20 @@ export default function Page() {
                     </h4>
                   </CardHeader>
                   <CardContent className="mt-2 text-xs print:text-[10px]">
-                    {work.description}
+                    <ReactMarkdown
+                    components={{
+                      a: ({ node, ...props }) => (
+                        <a
+                          {...props}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-black-600 underline hover:text-blue-800"
+                        />
+                      ),
+                    }}
+                  >
+                      {work.description}
+                    </ReactMarkdown>
                   </CardContent>
                   <div style={{ alignContent: 'center' }}>
                     {work.technologies?.map((badge) => (
@@ -178,8 +192,11 @@ export default function Page() {
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="mt-2 print:text-[12px]">
+                <CardContent className="mt-2">
                   {education.degree}
+                </CardContent>
+                <CardContent className="mt-2 text-xs print:text-[10px]">
+                  {education.description}
                 </CardContent>
               </Card>
             );
